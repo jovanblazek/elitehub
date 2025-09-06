@@ -35,7 +35,15 @@ export default defineConfig({
             label: 'Wiki',
             link: '/wiki/introduction',
             icon: 'open-book',
-            items: ['wiki/introduction'],
+            items: [
+              'wiki/introduction',
+              {
+                label: 'Mechaniky',
+                autogenerate: {
+                  directory: '/wiki/mechanics',
+                },
+              },
+            ],
           },
           {
             label: 'Návody',
@@ -54,11 +62,15 @@ export default defineConfig({
         ]),
         starlightThemeRapidePlugin(),
       ],
-      social: {
-        discord: 'https://discord.gg/invite/a7Zsx6a',
-        youtube: 'https://www.youtube.com/channel/UCRxMAY5KbBh_RsKhxbefeLg',
-        github: 'https://github.com/jovanblazek/elitehub',
-      },
+      social: [
+        { icon: 'discord', label: 'Discord', href: 'https://discord.gg/invite/a7Zsx6a' },
+        {
+          icon: 'youtube',
+          label: 'YouTube',
+          href: 'https://www.youtube.com/channel/UCRxMAY5KbBh_RsKhxbefeLg',
+        },
+        { icon: 'github', label: 'GitHub', href: 'https://github.com/jovanblazek/elitehub' },
+      ],
       editLink: {
         baseUrl: 'https://github.com/jovanblazek/elitehub/edit/main',
       },

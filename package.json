@@ -11,16 +11,16 @@
     "format": "prettier -w --cache --plugin prettier-plugin-astro ."
   },
   "dependencies": {
-    "@astrojs/starlight": "^0.32.2",
-    "astro": "^5.1.5",
-    "sharp": "^0.32.5",
-    "starlight-image-zoom": "^0.11.1",
-    "starlight-sidebar-topics": "^0.5.1",
-    "starlight-theme-rapide": "^0.4.0"
+    "@astrojs/starlight": "0.35.2",
+    "astro": "5.13.5",
+    "sharp": "0.34.3",
+    "starlight-image-zoom": "0.13.0",
+    "starlight-sidebar-topics": "0.6.0",
+    "starlight-theme-rapide": "0.5.1"
   },
   "devDependencies": {
-    "prettier": "^3.5.3",
-    "prettier-plugin-astro": "^0.14.1"
+    "prettier": "3.6.2",
+    "prettier-plugin-astro": "0.14.1"
   },
   "packageManager": "pnpm@9.15.5+sha512.845196026aab1cc3f098a0474b64dfbab2afe7a1b4e91dd86895d8e4aa32a7a6d03049e2d0ad770bbe4de023a7122fb68c1a1d6e0d033c7076085f9d5d4800d4"
 }

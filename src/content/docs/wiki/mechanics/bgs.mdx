@@ -1,0 +1,223 @@
+---
+  title: BGS
+  description: Simulácia galaxie
+---
+
+BGS (Background Simulation) je označení pro simulaci běžící na pozadí galaxie Elite: Dangerous. Svět Elite: Dangerous je plný života a tato simulace to zajišťuje. Simulace ovlivňuje celou řadu jevů v osídleném vesmíru. Od kontroly frakcí v jednotlivých systémech, přes složení misí a pasažérských misí na konkrétní stanici, až po ceny a poptávky po komoditách na jednotlivých trzích.
+
+Stejně jako BGS ovlivňuje nás - hráče, můžeme my ovlivnit BGS téměř vším, co uděláme. Když splníme misi, převezeme pasažéry, sestřelíme jakoukoli loď, prodáme natěžené suroviny, budeme obchodovat, prodáme kartografická data o vzdálených planetách nebo se jinak aktivně zapojíme do dění, ovlivňujeme tím simulaci a ta zas zpětně ovlivňuje co můžeme dělat.
+
+## BGS vs Powerplay
+
+Pro nováčka může být obtížné oddělit [Powerplay][powerplay] od BGS. V praxi spolu ale interagují pouze nepřímo. [Powerplay][powerplay] se týká souboje nejmocnějších skupin v čele s nejmocnějšími NPC ve vesmíru o nadvládu nad oblastí bubliny. O tom, která z [powerplay][powerplay] skupin bude kontrolovat daný systém a využívat tak okolní systémy se nerozhoduje v rámci BGS.
+
+Některé powerplay frakce ale náleží k jedné ze supervelmocí (Federace, Impérium nebo Aliance) a mohou mít výhody v systémech ovládaných menší (minor) frakcí, která také připadá k dané supervelmoci. Podobně jednotlivé [powerplay][powerplay] frakce mají snazší nebo obtížnější udržovat kontrolu nad systémy, které ovládá menší frakce určitého vládního zřízení (Government).
+
+**Příklad:** Denton Patreus zvyšuje hodnoty vzácného zboží, které prodáváte v systémech jeho zóny vlivu, které jsou zároveň Imperiální. Snáze udrží systém ve kterém je vláda vedoucí frakce Feudal nebo Patronage a je pro něj náročnější udržet si systém s Diktaturou v čele.
+
+## Boj o nadvládu a frakce
+
+V rámci BGS spolu soupeří jednotlivé menší (minor) frakce v boji o kontrolu nad jednotlivými stanicemi, outposty a celými systémy. Tyto frakce mohou být takzvaně hráčské, ale většina ve vesmíru je nehráčská.
+
+Rozdíl mezi hráčskou a nehráčskou frakcí je přitom velice malý. Jako hráč nemůžete být přímo členem frakce, jen jí můžete sloužit. Nemůžete frakci ovlivňovat přímo, jen skrze BGS. To samé platí i o nehráčských frakcích. Takže jediný rozdíl je, že hráčské frakce založil Frontier na základě požadavku skupinky hráčů, která chce mít nějaký podíl na živém světě Elite:Dangerous.
+
+Frakce, kterou podporujeme my, se jmenuje Interstellar Technology Research Corporation (zkráceně ITRC) a najdete nás v okolí systému Myrbat ([**náš discord**][discord]).
+
+Informace o frakcích ve vašem systému zjistíte v lodi v [pravém panelu][interface] v záložce STATUS.
+
+![Zoznam frakcí v systému](@/assets/wiki/mechanics/bgs/faction-list.jpg)
+
+Ve většině obývaných systémů, v bublině a v Colonii, se nachází 6-8 frakcí. V pravém menu uvidíte pro každou frakci jak dobře je na tom její ekonomika, jestli jsou schopni svoje lodě chránit - ukazatel bezpečnosti. Dále vidíte vaší [reputaci][reputation] u dané frakce a procentuální vyjádření kolik vlivu má daná frakce v tomto systému.
+
+Vždy jako první v seznamu je frakce, která má největší vliv v systému a tedy ho ovládá. Také vidíte v jednoduchých ikonkách [stavy][states] ve kterých dané frakce jsou. Každou z frakcí si můžete také rozkliknout pro detailnější informace. Co znamenají jednotlivé stavy si můžete přečíst [zde][states].
+
+Kolik má která frakce vlivu v tom kterém systému zjistíte také na [Inaře][inara]. Také se tam dozvíte jaké stanice ovládá a v jakých konfliktech se nachází. Nebo se naopak můžete podívat na rozložení sil v jakémkoli systému. Na našem [discord][discord] serveru také máme bota, který umí tyto informace získat a sdělit vám je přímo v rámci discordu.
+
+## Vliv (Influence)
+
+Klíčovým ukazatelem v soubojích o kontrolu a moc ve vesmíru je vliv. Každá frakce má nějaký vliv v každém ze systémů, kde se vyskytuje. Frakce, která má v systému nejvíce vlivu systém "ovládá". Která frakce systém ovládá má vliv na [powerplay][powerplay] a na některé další efekty.
+
+![Graf vlivu na inara.cz](@/assets/wiki/mechanics/bgs/influence-graph.jpg)
+
+### Jak získat vliv
+
+Vliv pro konkrétní frakci lze sbírat řadou způsobů. Ten hlavní jsou [mise](article.php?a=missions) a pasažérské mise. V odměnách misí často uvidíte INF+ až INF+++++ (tj. 1 až 5x plus). Výběr takovéto odměny zvyšuje influence frakci, která vám misi zadala.
+
+Další způsob jak zvýšit vliv frakce je při odevzdání [kartografických dat][exploration] na stanici, při [obchodu][trading] na stanici, nebo při odevzdání [bondů][bounty-hunting] nebo [bounty][bounty-hunting]. V takových případech vždy dostane frakce ovládající danou stanici malé množství INF, podle objemu daného obchodu nebo odměny. Čím větší obchod, nebo čím větší odměnu získáte, tím více INF.
+
+### Influence flow
+
+INF ale ještě není přímo vliv. V každém dni se v každém systému hraje jen o nějaký "koláč" vlivu. Čím více obyvatel má daný systém, tím méně vlivu je ve hře každý den.
+
+**Příklad:** V systému, který má 1 000 obyvatel se hraje o přibližně 21% každý den, zatímco v systému, který má 1 000 000 obyvatel se hraje jen o přibližně 15%. Pro teď si vezměme systém, který má něco kolem 5000 obyvatel, takže se každý den hraje o 20% vlivu.
+
+Tento koláč vlivu se nejdříve odebere všem frakcím v poměru toho, kolik vlivu měli předchozí den.
+
+**Příklad:** V našem systému, kde se **hraje o 20% vlivu** si představme 3 frakce - jedna má 50% a systém ovládá a další dvě mají 30% a 20% vlivu. Vedoucí frakci se sníží vliv o 50% z 20%, tedy o 10% na 40%. Vliv druhé frakce se sníží o 30% z 20%, tj. o 6% na 24%. A vliv třetí frakce se sníží o 4% (20% z 20%) na 16%.
+
+Náš "koláč" vlivu se nyní rozdělí jednotlivým frakcím zpět v poměru toho, kolik INF získaly frakce daný den.
+
+**Příklad:** Naše vedoucí frakce získala 70 INF+. Stejně tak 70 INF + získala i druhá frakce. Třetí frakce získala 60 INF+. Z toho můžeme spočítat, že celkem byly splněny úkoly za 200 INF+. Při velikosti “koláče” 20% to znamená, že každé dnešní INF + znamená 0,1% vlivu. Tohle číslo ale je každý den úplně jiné! Dnes ale první dvě frakce dostanou každá 7% a třetí dostane 6% vlivu.  
+Co pak uvidíme je že vedoucí frakci klesnul vliv z 50% na 47%, druhé frakci stoupl vliv z 30% na 31% a třetí stoupl vliv z 20% na 22%.
+
+Všimněte si, že první frakce ztratila vliv, zatímco druhá frakce vliv získala, přestože obě získali stejné množství INF. Třetí frakce dokonce získala méně INF, než první dvě a přesto si polepšila.
+
+![Vizuální reprezentace výpočtu](@/assets/wiki/mechanics/bgs/calculation.jpg)
+
+Až následně se započítá záporný vliv, který frakce ztratila tím, že v systému ztrácela vlastní lodě, nebo že hráčům expirovaly nebo se nepovedly mise pro tuto frakci.
+
+Vliv který jedna frakce ztratí těmito negativními efekty, se rozdělí ostatním v poměrech podle počátečního vlivu na začátku dne (před přepočtem)
+
+### Tick
+
+Výpočet, který jsem popsal výše probíhá každý den při tzv. ticku. Ten nastává v přibližně stejný čas každý den a mění se jen jednou za nějaké období při velikém updatu celé hry. Momentálně probíhá přibližně v 8 hodin večer našeho letního času. Aktuální čas ticku najdete [zde](https://elitebgs.app/tick).
+
+V případě, že se při výpočtu hodnoty vlivu dvou frakcí protnou - přejdou přes stejnou hodnotu, tak se zastaví na stejné hodnotě a nastane [konflikt][conflicts]. O konfliktech se více dozvíte [zde][conflicts].
+
+## Stavy
+
+Frakcie v Elite nadobúdajú rôzne stavy, na základe aktivity hráčov. Každý zo stavov má 3 vlastnosti. Dobu, kedy je v príprave (pending), dobu kedy je aktívny, a nakoniec “cooldown” - čas, za ako dlho sa môže znovu objaviť. Tieto vlastnosti sú iné u každého stavu a ich presné hodnoty nájdete na [wiki](https://elite-dangerous.fandom.com/wiki/Background_Simulation#State_Flow). Pozn. Niektoré hodnoty na wiki sú neaktuálne, mali by mať len informačný charakter.
+
+Stavy sa taktiež delia na viacero druhov:
+
+- Konflikty
+- Spokojnosť
+- Bezpečnostné stavy
+- Ekonomické stavy
+- Ostatné stavy
+
+Informácie o frakciách v systéme a ich stavoch nájdete [v pravom paneli][interface], v záložke STATUS. To, ktoré aktivity pomáhajú/nepomáhajú určitým stavom nájdete na [wiki](https://elite-dangerous.fandom.com/wiki/Background_Simulation#State_Effects).
+
+![Info o frakcii](@/assets/wiki/mechanics/bgs/faction-info.jpg)
+
+### Konflikty
+
+V prípade, že sa pri [ticku][tick] hodnoty [vplyvu][influence] (influence) dvoch frakcií pretnú, tak sa zastavia na rovnakej hodnote a nastane konflikt. Konflikt môže nastať len ak majú obe frakcie nad 7% vplyvu.
+
+V konflikte frakcie súperia o kontrolu nad stanicami. Víťaz získa najcennejší majetok porazeného. Po skončení konfliktu sa získaná/stratená influence vyráta podľa skóre.
+
+Pre sledovanie stavov konfliktov odporúčame stránku [inara.cz][inara].
+
+Typy konfliktov:
+
+- War - vojna medzi dvoma frakciami, z ktorých aspoň jedna nie je domácou v systéme
+- Civil War - rovnaký konflikt ako War, avšak obe frakcie sú v systéme domáce
+- Elections - konflikt medzi dvoma frakciami z rovnakej sociálnej skupiny (napr. Democracy vs Cooperative, Dictatorship - Feudal) Viac o sociálnych skupinách sa dočítaš [tu](https://forums.frontier.co.uk/threads/war-and-civil-war-bgs-guide-best-current-thinking.425015/#post-6665944).
+
+Po spustení konfliktu nastáva prípravný deň - stav je pending (viď. úvod). Následne na ďalší deň sa stáva konflikt aktívnym. Konflikty trvajú najviac 7 dní a pre výhru musí jedna z frakcií vyhrať 4 dni.
+
+#### War a civil war
+
+V prípade war a civil war sa v systéme vytvoria conflict zóny (CZ). Tieto zóny predstavujú aktívne bojiská, kde sa stretli lode oboch frakcií v konflikte. Delia sa podľa obtiažnosti na tri typy: Low, Medium, High.
+
+Rozdiely medzi jednotlivými typmi sú v obtiažnosti, počte úloh a veľkosti odmeny. Ťažšie zóny otočia misku váh na vašu stranu skôr ako tie ľahšie.
+
+**Pre vyhratie dňa vojny** alebo občianskej vojny je potrebné nazbierať viac "bodov" ako druhá frakcia. Akcie, ktoré majú efekt na zbieranie týchto bodov sú: 
+
+- Vyhrávanie CZ
+- Plnenie cieľov v CZ
+- Plnenie massacre misií (pravdepodobne akýchkoľvek combat misií)
+- Odovzdávanie combat bondov
+
+Conflict zóny sa dajú vyhrať ničením nepriateľských lodí a plnením cieľov, ktoré sa zobrazujú v pravom hornom paneli. Tieto ciele zvyknú byť rôzne, napr. znič elitné jednotky, ochráň civilistov alebo znič zbrane na veľkej capital lodi. Plnenie cieľov je rovnako, ak nie viac dôležité ako ničenie nepriateľov.
+
+V conflict zónach sa dá celkom pekne zarobiť. Za každú zničenú nepriateľskú loď dostávame tzv. combat bonds, ktoré si potom môžeme vyzdvihnúť na stanici v sekcii [contacts](article.php?a=stationServices).
+
+#### Elections
+
+Voľby sú na druhú stranu omnoho nudnejším konfliktom.
+
+**Pre vyhratie dňa vo voľbách** je nutné splniť viac volebných misií - nazbierať viac INF plusiek ako váš oponent. Tieto volebné misie sa vyznačujú svojim menom. Zväčša ide o prevoz volebných lístkov a dát, avšak nemusí sa jednať len o transporty. Misie, ktoré pomáhajú voľbám zvyknú mať v názve “for democracy” alebo podobné variácie.
+
+### Spokojnosť
+
+Spokojnosť je asi jeden z najmenej dôležitých stavov frakcie. Nemá totiž okrem informačného charakteru žiadne efekty. Pôvodne bol zamýšľaný ako faktor pre expanziu, avšak tento nápad nebol nikdy realizovaný.
+
+Stavy spokojnosti sú: _(zhora dole od pozitívnych, po negatívne stavy)_
+
+- Elated
+- Happy
+- Discontented
+- Unhappy
+- Despondent
+
+### Ekonomické stavy
+
+Odrážajú ekonomiku systému. Sú veľmi dôležité, nakoľko ovplyvňujú mnoho vecí. Napr. počet misií v [mission boarde][missions] alebo ceny na komoditnom trhu.
+
+Ekonomické stavy sú: _(zhora dole od pozitívnych, po negatívne stavy)_
+
+- Investment - pozitívne zvyšuje všetky atribúty tradingu
+- Boom - zdvojnásobuje influence z tradingu, zvyšuje ponuku a dopyt na trhu, navyšuje výskyt Boom misií, pridáva jedno + ku zisku [reputácie][reputation] a [influence][influence]
+- None - neutrálny stav
+- Bust - opak Boom-u, znižuje ponuku a dopyt na trhu, trade nedáva influence
+- Famine - v preklade hladomor, špeciálne misie pre ukončenie tohto stavu, combat vouchers a combat misie nepridávajú influence, znižuje ponuka jedla / zvyšuje dopyt po jedle, avšak predávanie jedla (food) zvyšuje influence dvojnásobne
+
+### Bezpečnostné stavy
+
+Odrážajú bezpečnosť systému. Fungujú rovnako ako ekonomické stavy, t.j. majú citeľný/viditeľný efekt.
+
+Bezpečnostné stavy sú: _(zhora dole od pozitívnych, po negatívne stavy)_
+
+- Civil Liberty - vysoká úroveň bezpečnosti v systéme, zvýšený výskyt bezpečnostných zložiek, odovzdávanie bounty voucherov pomáha udržať tento stav aktívny
+- None - neutrálny stav
+- Civil Unrest - spája sa s horšou ekonomickou situáciou v systéme, je produktom nelegálnych aktivít, menší výskyt bezpečnostných zložiek
+- Lockdown - zvýšený výskyt bezpečnostných zložiek, frakcia v lockdowne neponúka žiadne misie
+
+### Ostatné stavy
+
+Tieto stavy sa vyskytujú na základe určitých udalostí:
+
+- Expansion - je bližšie rozpísaná nižšie v sekcii expansion
+- Retreat - v prípade, že sa v krátkom čase nezvýši influence frakcie v systéme, frakcia opustí systém, ak nie je jej domovský
+- Outbreak - combat vouchery a misie influence nezvyšujú, avšak predávanie liekov influence zvyšuje dvojnásobne
+- Konflikty (War, Civil War, Elections)
+- Infested & Incursion - nastáva pri útoku Thargoidov
+- Exiled - tento stav bol počas celej histórie hry identifikovaný len raz, ak o ňom chcete vedieť viac spýtajte sa na našom [**discorde**][discord] :)
+
+Nasledujúce stavy sa vyskytujú náhodne alebo na základe príbehu hry:
+
+- Pirate attack
+- Blight
+- Drought
+- Infrastructure failure
+- Natural disaster
+- Public holidays
+- Terrorist attack
+- Technological leap
+- Historical event
+- Colonisation
+
+Viac o týchto stavoch sa dočítate na [wiki](https://elite-dangerous.fandom.com/wiki/Influence#Spontaneous).
+
+### Expanzia
+
+Expanzia je špeciálnym stavom, ktorý umožňuje frakcii rozšíriť sa do ďalšieho systému. Pre spustenie expanzie je nutné dosiahnuť **75%** influence. Po spustení je expanzia 5 dní pending a 5 dní aktívna. Exploration data a expansion misie pomáhajú zvýšiť začiatočnú influence v novom systéme.
+
+BGS vyberie systém v okruhu - respektíve v kocke okolo zdrojového systému s hranou 40 ly. (vzdialenosť od stredového bodu, zdrojového systému, ku stenám kocky je 20 ly)
+
+**Systémy pre expanziu sa vyberajú nasledovne: (zoradené podľa priority)**
+
+1.  Normálna expanzia - vyberá sa zo systémov, ktoré majú menej ako 7 frakcií a ešte v nich naša frakcia nikdy nebola. Najbližší systém je vybratý
+2.  Druhá šanca - vyberá sa zo systémov, ktoré majú menej ako 7 frakcií ale už sa z nich naša frakcia stiahla (retreatla). Najbližší systém je vybratý.
+3.  Invázia - vyberá sa zo systémov, v ktorých je presne 7 frakcií a aspoň jedna z nich nie je natívnou. Vyberie sa systém s najnižšou influence nie natívnej frakcie.
+
+Ak po skončení expanzie nie je vybraný cieľ, prejde frakcia do stavu Investment. Po skončení tohoto stavu sa znovu spustí expanzia, avšak už so zvýšeným dosahom - 30 ly okolo zdrojového systému (kocka s hranou 60 ly)
+
+Viac o expanzii sa dočítaš [tu](https://forums.frontier.co.uk/threads/expansions-bgs-guide-best-current-thinking.424895/).
+
+Tento článok vznikol v spolupráci s CMDR Johniczech. Viac info na [discorde][discord].
+
+[discord]: https://discord.gg/a7Zsx6a
+[powerplay]: https://elitehub.eu/article.php?a=powerplay
+[interface]: https://elitehub.eu/article.php?a=interface
+[states]: #stavy
+[conflicts]: #konflikty
+[inara]: https://inara.cz/
+[missions]: https://elitehub.eu/article.php?a=missions
+[exploration]: /guides/professions/exploration
+[trading]: /guides/professions/trading
+[bounty-hunting]: /guides/professions/bounty-hunting
+[reputation]: https://elitehub.eu/article.php?a=reputation
+[tick]: #tick
+[influence]: #vliv-influence
