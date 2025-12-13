@@ -1,0 +1,148 @@
+---
+  title: BGS - Stavy
+  description: Prehľad stavov frakcií v Background Simulation (BGS) v Elite Dangerous.
+---
+
+Frakcie v Elite nadobúdajú rôzne stavy, na základe aktivity hráčov a NPC-čiek (nehráčskych charakterov). Každý zo stavov má 3 vlastnosti. Dobu, kedy je v príprave (pending), dobu kedy je aktívny, a nakoniec “cooldown” - čas, za ako dlho sa môže znovu objaviť. Tieto vlastnosti sú iné u každého stavu a ich presné hodnoty nájdete na [StateFlow]. Pozn. Niektoré hodnoty na wiki sú neaktuálne, mali by mať len informačný charakter.
+
+Stavy sa taktiež delia na viacero druhov:
+
+- Konflikty
+- Spokojnosť
+- Bezpečnostné stavy
+- Ekonomické stavy
+- Ostatné stavy
+
+Informácie o frakciách v systéme a ich stavoch nájdete [v pravom paneli][Interface], v záložke STATUS. To, ktoré aktivity pomáhajú/nepomáhajú určitým stavom nájdete na [StateEffects].
+
+![Info o frakcii](/images/bgs---stavy1.jpg)
+
+## Konflikty
+
+V prípade, že sa pri [Tick] hodnoty [Influence] (influence) dvoch frakcií pretnu, tak sa zastavia na rovnakej hodnote a nastane konflikt. Konflikt môže nastať len ak majú obe frakcie nad 7% vplyvu.
+
+V konflikte frakcie súperia o kontrolu nad stanicami. Víťaz získa najcennejší majetok porazeného. Po skončení konfliktu sa získaná/stratená influence vyráta podľa skóre.
+
+Pre sledovanie stavov konfliktov odporúčame stránku [Inara].
+
+Typy konfliktov:
+
+- War - vojna medzi dvoma frakciami, z ktorých aspoň jedna nie je domácou v systéme
+- Civil War - rovnaký konflikt ako War, avšak obe frakcie sú v systéme domáce
+- Elections - konflikt medzi dvoma frakciami z rovnakej sociálnej skupiny (napr. Democracy vs Cooperative, Dictatorship - Feudal) Viac o sociálnych skupinách sa dočítaš [ForumsWarGuide].
+
+Po spustení konfliktu nastáva prípravný deň - stav je pending (viď. úvod). Následne na ďalší deň sa stáva konflikt aktívnym. Konflikty trvajú najviac 7 dní a pre výhru musí jedna z frakcií vyhrať 4 dni.
+
+### War a civil war
+
+V prípade war a civil war sa v systéme vytvoria conflict zóny (CZ). Tieto zóny predstavujú aktívne bojiská, kde sa stretli lode oboch frakcií v konflikte. Delia sa podľa obtiažnosti na tri typy: Low, Medium, High.
+
+Rozdiely medzi jednotlivými typmi sú v obtiažnosti, počte úloh a veľkosti odmeny. Ťažšie zóny otočia misku váh na vašu stranu skôr ako tie ľahšie.
+
+**Pre vyhratie dňa vojny** alebo občianskej vojny je potrebné nazbierať viac "bodov" ako druhá frakcia. Akcie, ktoré majú efekt na zbieranie týchto bodov sú: 
+
+- Vyhrávanie CZ
+- Plnenie cieľov v CZ
+- Plnenie massacre misií (pravdepodobne akýchkoľvek combat misií)
+- Odovzdávanie combat bondov
+
+Conflict zóny sa dajú vyhrať ničením nepriateľských lodí a plnením cieľov, ktoré sa zobrazujú v pravom hornom paneli. Tieto ciele zvyknú byť rôzne, napr. znič elitné jednotky, ochráň civilistov alebo znič zbrane na veľkej capital lodi. Plnenie cieľov je rovnako, ak nie viac dôležité ako ničenie nepriateľov.
+
+V conflict zónach sa dá celkom pekne zarobiť. Za každú zničenú nepriateľskú loď dostávame tzv. combat bonds, ktoré si potom môžeme vyzdvihnúť na stanici v sekcii [StationServices].
+
+### Elections
+
+Voľby sú na druhú stranu omnoho nudnejším konfliktom. 
+
+**Pre vyhratie dňa vo voľbách** je nutné splniť viac volebných misií - nazbierať viac INF plusiek ako váš oponent. Tieto volebné misie sa vyznačujú svojim menom. Zväčša ide o prevoz volebných lístkov a dát, avšak nemusí sa jednať len o transporty. Misie, ktoré pomáhajú voľbám zvyknu mať v názve “for democracy” alebo podobné variácie.
+
+## Spokojnosť
+
+Spokojnosť je asi jeden z najmenej dôležitých stavov frakcie. Nemá totiž okrem informačného charakteru žiadne efekty. Pôvodne bol zamýšľaný ako faktor pre expanziu, avšak tento nápad nebol nikdy realizovaný.
+
+Stavy spokojnosti sú: _(zhora dole od pozitívnych, po negatívne stavy)_
+
+- Elated
+- Happy
+- Discontented
+- Unhappy
+- Despondent
+
+## Ekonomické stavy
+
+Odrážajú ekonomiku systému. Sú veľmi dôležité, nakoľko ovplyvňujú mnoho vecí. Napr. počet misií v [Missions] alebo ceny na komoditnom trhu.
+
+Ekonomické stavy sú: _(zhora dole od pozitívnych, po negatívne stavy)_
+
+- Investment - pozitívne zvyšuje všetky atribúty tradingu
+- Boom - zdvojnásobuje influence z tradingu, zvyšuje ponuku a dopyt na trhu, navyšuje výskyt Boom misií, pridáva jedno + ku zisku [Reputation] a [Influence]
+- None - neutrálny stav
+- Bust - opak Boom-u, znižuje ponuku a dopyt na trhu, trade nedáva influence
+- Famine - v preklade hladomor, špeciálne misie pre ukončenie tohto stavu, combat vouchers a combat misie nepridávajú influence, znižuje ponuka jedla / zvyšuje dopyt po jedle, avšak predávanie jedla (food) zvyšuje influence dvojnásobne
+
+## Bezpečnostné stavy
+
+Odrážajú bezpečnosť systému. Fungujú rovnako ako ekonomické stavy, t.j. majú citeľný/viditeľný efekt.
+
+Bezpečnostné stavy sú: _(zhora dole od pozitívnych, po negatívne stavy)_
+
+- Civil Liberty - vysoká úroveň bezpečnosti v systéme, zvýšený výskyt bezpečnostných zložiek, odovzdávanie bounty voucherov pomáha udržať tento stav aktívny
+- None - neutrálny stav
+- Civil Unrest - spája sa s horšou ekonomickou situáciou v systéme, je produktom nelegálnych aktivít, menší výskyt bezpečnostných zložiek
+- Lockdown - zvýšený výskyt bezpečnostných zložiek, frakcia v lockdowne neponúka žiadne misie
+
+## Ostatné stavy
+
+Tieto stavy sa vyskytujú na základe určitých udalostí:
+
+- Expansion - je bližšie rozpísaná nižšie v sekcii expansion
+- Retreat - v prípade, že sa v krátkom čase nezvýši influence frakcie v systéme, frakcia opustí systém, ak nie je jej domovský
+- Outbreak - combat vouchery a misie influence nezvyšujú, avšak predávanie liekov influence zvyšuje dvojnásobne
+- Konflikty (War, Civil War, Elections)
+- Infested & Incursion - nastáva pri útoku Thargoidov
+- Exiled - tento stav bol počas celej histórie hry identifikovaný len raz, ak o ňom chcete vedieť viac spýtajte sa na našom [**Discord**] :)
+
+Nasledujúce stavy sa vyskytujú náhodne alebo na základe príbehu hry:
+
+- Pirate attack
+- Blight
+- Drought
+- Infrastructure failure
+- Natural disaster
+- Public holidays
+- Terrorist attack
+- Technological leap
+- Historical event
+- Colonisation
+
+Viac o týchto stavoch sa dočítate na [InfluenceSpontaneous].
+
+## Expanzia
+
+Expanzia je špeciálnym stavom, ktorý umožňuje frakcii rozšíriť sa do ďalšieho systému. Pre spustenie expanzie je nutné dosiahnuť **75%** influence. Po spustení je expanzia 5 dní pending a 5 dní aktívna. Exploration data a expansion misie pomáhajú zvýšiť začiatočnú influence v novom systéme.
+
+BGS vyberie systém v okruhu - respektíve v kocke okolo zdrojového systému so stranou 40 ly. (vzdialenosť od stredového bodu, zdrojového systému, ku stenám kocky je 20 ly)
+
+**Systémy pre expanziu sa vyberajú nasledovne: (zoradené podľa priority)**
+
+1.  Normálna expanzia - vyberá sa zo systémov, ktoré majú menej ako 7 frakcií a ešte v nich naša frakcia nikdy nebola. Najbližší systém je vybratý
+2.  Druhá šanca - vyberá sa zo systémov, ktoré majú menej ako 7 frakcií ale už sa z nich naša frakcia stiahla (retreatla). Najbližší systém je vybratý.
+3.  Invázia - vyberá sa zo systémov, v ktorých je presne 7 frakcií a aspoň jedna z nich nie je natívnou. Vyberie sa systém s najnižšou influence nie natívnej frakcie.
+
+Ak po skončení expanzie nie je vybraný cieľ, prejde frakcia do stavu Investment. Po skončení tohoto stavu sa znovu spustí expanzia, avšak už so zvýšeným dosahom - 30 ly okolo zdrojového systému (kocka so stranou 60 ly)
+
+Viac o expanzii sa dočítaš [ForumsExpansion].
+
+[StateFlow]: https://elite-dangerous.fandom.com/wiki/Background_Simulation#State_Flow
+[Interface]: interface
+[StateEffects]: https://elite-dangerous.fandom.com/wiki/Background_Simulation#State_Effects
+[Tick]: bgs#tick
+[Influence]: bgs#Vliv
+[Inara]: https://inara.cz
+[ForumsWarGuide]: https://forums.frontier.co.uk/threads/war-and-civil-war-bgs-guide-best-current-thinking.425015/#post-6665944
+[StationServices]: stationServices
+[Missions]: missions
+[Reputation]: reputation
+[Discord]: https://discord.gg/a7Zsx6a
+[InfluenceSpontaneous]: https://elite-dangerous.fandom.com/wiki/Influence#Spontaneous
+[ForumsExpansion]: https://forums.frontier.co.uk/threads/expansions-bgs-guide-best-current-thinking.424895/

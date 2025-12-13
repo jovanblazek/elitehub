@@ -1,0 +1,129 @@
+---
+title: Interface
+description: Přehled uživatelského rozhraní kokpitu a panelů v Elite Dangerous.
+---
+
+Pilotování vesmírné lodi je poměrně složitá záležitost. Z toho důvodu má každá loď k dispozici veeeeelmi obsáhlý Interface, s hromadou panelů a informací. Pokud hledáš konkrétní panel, koukni se prosím do obsahu. Ten tě zavede rovnou k popisu panelu, na který se chceš podívat.
+
+Panely můžeme otevřít jednoduchým podíváním se kamerou na ně, nebo pomocí keybindů, které jim můžeme přiřadit v nastaveních.
+
+Cockpit UI se také dělí na 2 módy: 
+
+**Analysis** (modré UI): Určeno pro exploration a skenování. Abychom mohli použít některé skenery, musíme přepnout Cockpit mode do analysis módu. (viz. nastavení - controls - mode switches)
+
+**Combat** (oranžové UI): Určeno převážně pro boj, ale používá se po většinu času. Abychom mohli použít zbraně a některé utility, musíme přepnout Cockpit mode do combat módu. (viz. nastavení - keybinds - mode switches)
+
+![Cockpit mode - Combat](/images/interface1.jpg)
+
+## Radar
+
+Radar se nachází přímo uprostřed kokpitu. Jedná se o jeden z nejdůležitějších panelů, protože nám umožňuje si i ve vesmíru ponechat dobrou představu o tom, kde se který signál okolo nás nachází. Vpravo od radaru máme ukazatel rychlosti a vlevo od radaru se nachází ukazatel tepla lodi.
+
+**_Signály mají různé tvary a barvy:_**
+
+Bílý čtvereček - nákladní kontejnery, vyhozené heatsinky, materiály, fragmenty, FSD wakes
+
+Bílý trojúhelník - limpety, rakety a torpéda
+
+Oranžový čtvereček/trojúhelník - neutrální loď nebo stanice 
+
+Zelený čtvereček/trojúhelník - spřátelená loď nebo stanice
+
+Červený čtvereček/trojúhelník - nepřátelská loď nebo stanice (Pokud signál bliká červeno-bíle, znamená to, že střílí po nás nebo po členovi wingu)
+
+Modrý čtvereček/trojúhelník - loď nebo FSD wake lodi která je součástí stejného wingu jako jsme my (pokud signál bliká modro-žlutě, znamená to, že je pod palbou)
+
+Čtvereček = loď má zatažené zbraně
+
+Trojúhelník = loď má vysunuté zbraně
+
+**_Hráče poznáme tak, že jeho signál (čtvereček nebo trojúhelník) je prázdný_**
+
+![Ukazatel teploty + radar + ukazatel rychlosti](/images/interface2.jpg)
+
+## Systems panel
+
+Nachází se vpravo hned vedle radaru a dává nám informace o funkčním stavu lodi jako jsou např. [štíty][Shields], poškození trupu, palivo, energie v systémech, [mass lock][MassLock], apod.
+
+![Systems panel](/images/interface3.jpg)
+
+## Target panel
+
+Nachází se hned vlevo od radaru. Zobrazuje se na něm buď námi zvolený cíl (loď, stanice, planeta, sluneční soustava,...) nebo destinace, kde se právě nacházíme. U zvoleného cíle pak také uvidíme užitečné obecné informace o něm. U lodí tak např. hned zjistíme, zda je loď [wanted][CrimeSystem] a o jaký typ lodi se jedná, a u planet zase typ dané planety.
+
+Pokud si zvolíme nějaký cíl, bude nás k němu navádět i tzv. Kompas. ten nám pomáhá sledovat a nasměrovat se na jeden určitý cíl, který máme zvolený. Kompas funguje tak, že máme 2D kruh a na něm tečku. Pokud je tečka plná a uprostřed kruhu, je cíl přímo před námi. Pokud je tečka prázdná, a je uprostřed kruhu, je cíl přesně za námi.
+
+![Target panel](/images/interface4.jpg)
+
+## Info panel
+
+Nachází se vpravo nahoře (nad systems panelem) a dozvíme se z něj informace a novinky ohledně naší lodě. Chodí nám tam varovná hlášení jako např. že jsme [dostali pokutu][CrimeSystem], že jsme [mass locked][MassLock], že nemáme dost energie pro boost, a nebo, že jsme získali odměnu (bounty).
+
+![Info panel](/images/interface5.jpg)
+
+## Comms panel
+
+Najdeme jej vlevo nahoře (nad target panelem) a slouží ke komunikaci. Když si jej otevřeme, zobrazí se nám chat a jiné záložky:
+
+**Chat**\- Můžeme zde pomocí textu komunikovat... TAB - měníme textové kanály (Local/Wing/Direct/…)
+
+**Inbox** - Zde nám chodí různá oznámení ohledně misí a podobné
+
+**Social** - Seznam komandérů v okolí, aktivních přátel a nastavení wingu
+
+**History** - Historie sociálních interakcí apod.
+
+**Squadron Feed** - Pokud jsme členem [squadronu][Squadrons], chodí nám sem důležitá oznámení
+
+**Nastavení** - Nastavení textové a hlasové komunikace
+
+![Comms panel](/images/interface6.jpg)
+
+## Navigation panel
+
+Nachází se úplně vlevo a slouží primárně k přehledné navigaci uvnitř slunečního systému. Najdeme zde však i jiné záložky:
+
+**Navigation** - počet zbývajících skoků při naplánované trase, hierarchicky seřazený seznam objevených stelárních a jiných objektů v systému.
+
+**Transactions** - Aktivní transakce jako např. přijaté mise, nezaplacené pokuty, nevyzvednuté odměny
+
+**Contacts** - Seznam signálů v dosahu senzorů seřazené sestupně od nejhmotnějšího (např. lodě, stanice, nákladní kontejnery, FSD wake signály)
+
+**Subtargets** - Interní moduly targetnutého objektu
+
+![Navigation panel](/images/interface7.jpg)
+
+## Home panel
+
+Nachází se úplně vpravo a je to hlavní panel, který slouží primárně jako menu pro Pilota a jako panel ke spravování lodi. Obsahuje následující záložky:
+
+**Home** - Informace o pilotovi (o nás), takže [ranky][Ranks], kredity, rebuy lodi a dále menu pro přístup k [engineerům][Engineering], [squadronám][Squadrons], codex, apod.
+
+**Modules** - Zde je seznam modulů v lodi, jejich integrita, spotřeba energie a můžeme zde modulům přiřadit [priority][Priority] nebo je manuálně vypnout a opravit
+
+**Fire groups** - Máme zde seznam všech použitelných zbraní a utility a můžeme si zde nastavit [fire groups][FireGroups]
+
+**Ship** - Zde spravujeme funkce lodi, jako např. night vision, flight assist, supercruise assist, turret mode a jiné
+
+**Inventory** - Zde spravujeme inventář lodi, tudíž nákladní prostor, [materiály][Materials], rafinerii a [syntézu][Synthesis].
+
+**Status** - Tato záložka nám dává přehled o politické situaci v daném systému. Vidíme tedy seznam všech minor factions, jejich influence, state a naši reputaci s nimi. 
+
+![Home panel](/images/interface8.jpg)
+
+## Crew panel
+
+Otevřeme jej, když se podíváme dolů mezi naše nohy ( ͡° ͜ʖ ͡°). Hlavním účelem tohoto panelu je kontrola SRV a Fighterů a přiřazování členů posádky. Můžeme zde dávat rozkazy NPC pilotům a také skrze tento panel nasedáme do SRV a fighterů. 
+
+![Crew panel](/images/interface9.jpg)
+
+[Shields]: shields
+[MassLock]: massLock
+[CrimeSystem]: crimeSystem
+[Squadrons]: squadrons
+[Ranks]: ranks
+[Engineering]: engineering
+[Priority]: priority
+[FireGroups]: fireGroups
+[Materials]: materials
+[Synthesis]: synteza

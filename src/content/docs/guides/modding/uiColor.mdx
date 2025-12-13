@@ -1,0 +1,45 @@
+---
+title: UI Color
+description: Ako zmeniť farbu používateľského rozhrania v Elite Dangerous pomocou EDHM alebo manuálnou úpravou konfiguračných súborov.
+---
+
+Elite Dangerous je známy svojimi ikonickými oranžovými menu, avšak tie niekoho po čase omrzia. Developeri neumožňujú zmenu farieb interfaceu v hre, namiesto toho to musíme urobiť manuálne v súboroch hry alebo použiť nový komunitný program EDHM (Elite Dangerous HUD mod). Takéto “módovanie” hry je povolené a zobrazuje sa len na strane klienta - hráča.
+
+## EDHM
+
+EDHM nám dáva najväčšiu voľnosť v úpravách interfacu. Vieme zmeniť jednotlivé komponenty UI nezávisle od iných. Zmeny sa taktiež prejavia priamo počas toho ako máme zapnutú hru. (V čase písania tohoto článku je EDHM kompatibilné len s Horizons)
+
+1.  Stiahnite si EDHM_UI_Setup z [githubu][GitHub].
+2.  Po inštalácii a spustení sa nám zobrazí prvotné nastavenie. Tu si potrebujeme skontrolovať kde máme uložený Elite. Ak ste pri jeho inštalácii nič nemenili, appka by ho mala vedieť nájsť sama.
+3.  Následne sa nám stiahne respektíve aktualizuje EDHM mód.
+4.  Hotovo!
+
+![Hlavné menu EDHM](/images/uiColor1.jpg)
+
+V menu si vieme vybrať, ktorú časť UI chceme upravovať. K dispozícii máme aj okno s náhľadom. Po nastavení nezabudnite tému aplikovať (v pravo hore).  
+Tém je možné vytvoriť viacero a prepínať sa medzi nimi alebo ich exportovať pre kamarátov.
+
+Pre akékoľvek otázky tu je [wiki][Wiki].
+
+![Živý preview](/images/uiColor2.jpg)
+
+## Starý spôsob
+
+1.  V prvom rade si "namiešame" farbu našeho UI na jednej z týchto stránok: [Arrku][Arkku], [Team2xh][Team2XH].
+2.  Keď sme s výsledkom spokojní, otvoríme si priečinok s konfiguračným súborom.  
+    **Windows** - %APPDATA%\\..\\Local\\Frontier Developments\\Elite Dangerous\\Options\\Graphics  
+    **OS X** - Library/Application Support/Frontier Developments/Elite Dangerous/Options/Graphics
+3.  Zálohujeme si súbor GraphicsConfigurationOverride
+4.  Následne skopírujeme obsah z nášho editora a nahradíme riadky s farbami. Viď obr. 3.  
+    Tieto riadky začínajú tagmi _MatrixRed, MatrixGreen, MatrixBlue_
+5.  Súbor uložíme a spustíme hru. V prípade, že hra padá, alebo sa vyskytne iný problém, obnovíme súbor GraphicsConfigurationOverride zo zálohy.
+
+Pre inšpiráciu odporúčame nasledujúci [článok][FrontierForum] na fóre.
+
+![Zmena obsahu GraphicsConfigurationOverride](/images/uiColor3.jpg)
+
+[GitHub]: https://github.com/BlueMystical/EDHM_UI/releases
+[Wiki]: https://github.com/BlueMystical/EDHM_UI/wiki
+[Arkku]: http://arkku.com/elite/hud_editor/
+[Team2XH]: http://team2xh.net/elite/
+[FrontierForum]: https://forums.frontier.co.uk/threads/no2o-the-definitive-list-of-1-7-2-2-compatible-hud-colour-color-configs-please-add-yours.259311/

@@ -1,0 +1,70 @@
+---
+title: Flight Model
+description: Přehled různých režimů pohonu a letového modelu v Elite Dangerous.
+---
+
+Vzhledem k tomu, že je galaxie v Elite Dangerous v měřítku 1:1 jsou vzdálenosti mezi destinacemi enormní. Z tohoto důvodu mají vesmírné lodě 3 typy pohonu (Cruise, Supercruise, Hyperjump), které umožňují rychlé překonávání velkých vzdáleností. Cruise je let za pomoci normálních trysek (thrusterů) lodi a supercruise a hyperjump využívají k pohybu FSD (Frame Shift Drive).
+
+Protože je vesmír tak velký, je v Elite rozdělen na sluneční systémy a ty jsou dále rozděleny na jednotlivé destinace. Destinací může být vesmírná stanice, asteroidový pás, planeta, nav. beacon nebo jen pouhý signál. Navigation panel je tudíž takový seznam destinací, které v daném slunečním systému jsou.
+
+## Cruise
+
+Cruise (normální let) je základní letový model pro pohyb lodí uvnitř jedné destinace. K normálnímu letu loď používá své iontové trysky a ukazatel rychlosti je v m/s. Pokud máme ukazatel rychlosti na 75%, má loď největší obratnost při zapnutém flight assistu. Tento let je tedy používán k přistávání na stanicích, boji, těžbě, sbírání nákladu nebo [materiálů][Materials], atd...
+
+![Vylétání ze stanice v normálním cruisu](/images/flightModel1.jpg)
+
+## Supercruise
+
+Vzhledem k tomu, že se při cruisu můžeme pohybovat pouze v řádu stovek m/s, trvalo by věčnost, než bychom se dostali z jedné destinace (např. vesmírné stanice) do jiné. Pro přechod do supercruisu nesmí být naše loď [mass locked][MassLock].
+
+![Cestování v supercruisu na vesmírnou stanici](/images/flightModel2.jpg)
+
+_\*_**_Seybrův fun fact_**_: kdybychom letěli rychlostí 350 m/s ze stanice do asteroidového pásu vzdáleného 1000 ls, trvala by nám cesta 2 roky, 261 dní, 9 hodin a 57 vteřin reálného času\*_
+
+Supercruise se proto používá k pohybu mezi destinacemi uvnitř jednoho slunečního systému. K tomuto typu letu používáme, podobně jako pro hyperjump, náš Frame Shift Drive. Abychom se dostali do supercruisu, neoznačujeme buď nic a nebo destinaci, do které chceme letět, a stlačíme klávesu pro skok do supercruisu (defaultně, stejně jako hyperjump, na klávese J). Následně se nám začne nabíjet FSD a po nabití loď skočí do supercruisu.
+
+Ukazatel rychlosti nám nyní začne ukazovat rychlost buď v km/s, Mm/s (megametry/sekundu) nebo **c** (rychlost světla). Díky tomu jsme schopni urazit velké vzdálenosti během minut, nebo dokonce vteřin.
+
+Pokud jsme v supercruisu a chceme skočit do jiné destinace, musíme se k ní dostatečně přiblížit (obvykle na vzdálenost menší než 1 Mm) a snížit rychlost (Obvykle pod 1 Mm/s). Jakmile je v pořádku naše vzdálenost i rychlost k destinaci, objeví se nám nad radarem modré oznámení PRESS (J) TO DISENGAGE. V tomto případě stačí už jen zmáčknout klávesu pro supercruise a loď by měla opustit supercruise a skočit do destinace.
+
+![Oznámení, při kterém můžeme bezpečně vyskočit ze supercruisu](/images/flightModel3.jpg)
+
+_\*_**_Qwertyho pro tip_**_: Abychom předešli tomu, že při příletu k destinaci nestihneme včas zpomalit a nebudeme schopni bezpečně vyskočit ze supercruisu, doporučujeme nastavit si keybind_ set speed to 75%_. Loď nám díky tomu začne automaticky zpomalovat i rychlovat, aby byl přílet k destinaci optimální.\*_
+
+![Ukazatel rychlosti v supercruisu je na 75% (svítí modře)](/images/flightModel4.jpg)
+
+**Pozor:** při pohybu v supercruisu, nemůžeme loď nikdy kompletně zastavit. nejnižší rychlost, kterou můžeme v supercruisu letět je 30 km/s. Pokud potřebujeme nouzově opustit supercruise a přejít do normálního letu (cruisu), zmáčkneme dvakrát rychle za sebou klávesu pro supercruise. Při tomto manévru bude naše loď okamžitě vyhozena ze supercruisu, dostane dlouhý FSD cooldown a utrpí malé poškození.
+
+## Hyperjump
+
+Supercruise nám sice umožňuje cestovat několika set násobnou rychlostí světla, ale k překonávání vzdáleností mezi slunečními systémy je i maximální rychlost 2001c příliš pomalá. K provedení hyperjumpu nesmí být naše loď [mass locked][MassLock].
+
+_\*_**_Další Seybrův fun fact_**_: kdybychom cestovali z jednoho slunečního systému do druhého, který je vzdálený 12 ly, trvala by cesta při maximální rychlosti v supercruisu 2 dny, 4 hodiny, 34 minut a 15 sekund reálného času\*_
+
+Z tohoto důvodu zde je 3. způsob pohybu - Hyperjump. Při hyperjumpu FSD modul naší lodi otevírá trhlinu v časoprostoru, kterou následně loď jedním, několika vteřinovým skokem cestuje ze systému do systému. Pro aktivaci hyperjumpu si musíme zvolit sluneční systém, do kterého chceme skočit, nasměrovat se na něj a požít klávesu pro hyperjump (defaultně, stejně jako supercruise, na klávese J). Po nabití FSD loď skočí do hyperjump tunelu (zvaný witchspace), který funguje jako načítací obrazovka… Délka trvání hyperjumpu tedy závisí na internetovém připojení a na rychlosti frontier serverů.
+
+Skok je dokončen, jakmile loď opustí hyperjump tunel. Konec hyperjumpu je vždy u nejhmotnějšího objektu v dané sluneční soustavě (popř. mezi objekty, pokud jich je více).
+
+![Nabíjení FSD pro hyperjump do jiného slunečního systému](/images/flightModel5.jpg)
+
+## Přistávání na planetách
+
+Process přistávání na planetách přidává ještě další 2 typy letu a to Orbital Cruise a Glide.
+
+### Orbital Cruise:
+
+Jakmile se při letu v supercruisu sníženou rychlostí dostatečně přiblížíme k planetě, na které můžeme přistát (označena modrým kruhem v system mapě), přepne se supercruise automaticky na Orbital cruise.
+
+![Let v orbital cruisu](/images/flightModel6.jpg)
+
+### Glide:
+
+Pokud při Orbital Cruisu klesneme pod výšku 25 km od povrchu planety, přejde naše loď do Glidu, který je takovým přechodem mezi Supercruisem a normálním letem. Při glidu se naše loď přiblíží blíže k povrchu planety a následně přejde do normálního letu.
+
+Přistávání na planetách je však o něco složitější. Z toho důvodu pro vás máme samostatný článek [přistávání na planetách][PlanetaryLandings].
+
+![Let v glidu](/images/flightModel7.jpg)
+
+[Materials]: materials
+[MassLock]: massLock
+[PlanetaryLandings]: planetaryLandings

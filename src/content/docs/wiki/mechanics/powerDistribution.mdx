@@ -1,0 +1,39 @@
+---
+title: Power Distribution
+description: Distribuce energie mezi systémy, motory a zbraně v Elite Dangerous.
+---
+
+Distribuce energie je klíčová mechanika pro vykonávání většiny činností. Ve zkratce se jedná o přesouvání energie mezi systémy, motory a zbraněmi. Distribuci energie má na starosti **power distributor,** který najdeme v [core internals.][Outfitting] Čím větší a lepší power distributor máme, tím větší je kapacita v kondenzátorech a rychlost dobíjení.
+
+## UI
+
+Najdeme ho mezi hologramem naší lodi a ukazatelem paliva. Vidíme zde 3 sloupečky s označením kategorií: 
+
+- **SYS** \- systémy 
+- **ENG** \- motory 
+- **WEP** \- zbraně
+
+![Interface distributoru energie](/images/powerDistribution1.jpg)
+
+**Sloupečky** nám ukazují stav capacitoru (kondenzátoru), neboli kapacity energie dané kategorie. Kondenzátor se automaticky dobíjí a rychlost dobíjení záleží na počtu bodů energie ("pips") v jednotlivých kategoriích.
+
+**Tečky** pod sloupečkem jsou body energie (zvané "pips") a udávají kolik "energie" máme v jaké kategorii.
+
+## Jak to funguje?
+
+Různé moduly a jejich používání, které vyžadují energii z distributoru se dělí do 3 kategorií:
+
+- **SYS** \- aktivní použití utility modulů, dobíjení štítů
+- **ENG** \- boost motorů
+- **WEP** \- střelba ze zbraní
+
+Pokaždé, když je nějaká z výše uvedených činností prováděna, spotřebovává energii z kondenzátoru. Čím více pips máme v dané kategorii, tím rychleji se její kondenzátor dobíjí.
+
+## Pasivní schopnosti
+
+**SYS** \- čím více pips máme v systémech, tím silnější jsou naše [štíty][Shields] (0 bodů = 100%, 1 bod = 118%, 2 body = 133%, 3 body = 147%, 4 body = 160%)
+
+**ENG** \- čím více pips máme v motorech, tím rychlejší a obratnější je loď (boost speed zůstává stejný).
+
+[Outfitting]: outfitting
+[Shields]: shields

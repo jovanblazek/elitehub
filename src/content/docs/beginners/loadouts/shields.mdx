@@ -1,0 +1,64 @@
+---
+title: Shields
+description: Přehled fungování, typů a vylepšení štítů v Elite Dangerous.
+---
+
+Štíty jsou velmi podstatnou částí vybavení lodě. Loď je bez nich sice plně funkční, ale ve většině případů zranitelná. Z tohoto důvodu doporučujeme používat štíty při všech činnostech a obětovat těch pár tun nákladního prostoru, světelných let doskoku nebo přídavného pancéřování (hull reinforcements).
+
+## Vlastnosti a typy štítu
+
+Shield generator můžeme namontovat do kteréhokoliv slotu v optional internals. Je však možné mít na lodi pouze jeden generátor štítu. Čím větší a lepší generátor koupíme, tím silnější štíty budou. Do větších lodí však nemůžeme namontovat nejmenší shield generator, protože je příliš slabý na to, aby vůbec vytvořil štít kolem lodi.
+
+![Příliš malý shield generator](/images/shields1.jpg)
+
+**Existují 3 typy shield generatorů:**
+
+- Shield Generator - klasický generátor štítu (modré)
+- BI-WEAVE Shield Generator - slabší, ale rychleji se regeneruje (fialové)
+- Prismatic Shield Generator - silnější, ale pomaleji se regeneruje (zelené)
+
+## Síla štítů:
+
+Měří se v Mega-Joulech (MJ) a v rezistencích. MJ udávají absolutní sílu, neboli celkový počet HP štítu a rezistence nám říkají, kolik procent poškození ze kterých zbraní štíty při zasažení obdrží.
+
+## Pip management:
+
+Čím více bodů energie (pips) máme v systémech, tím větší absolutní sílu (počet MJ) štíty mají.
+
+(0 bodů = 100% , 1 bod = 118% , 2 body = 133% , 3 body = 147% , 4 body = 160%)
+
+## Příklad
+
+Máme shield generator který kolem naší lodi vytváří štít o absolutní síle 1000 MJ při 0 bodech v systémech. 
+
+**Rezistence všech shield generatorů jsou bez engineeringu:**
+
+- Explosive: 50%
+- Kinetic: 40%
+- Thermal: -20% 
+
+**To znamená že:**
+
+- když štít zasáhne zbraň, která dává výbušné poškození ( explosive ) a poškození jedné střely je 100, obdrží štít poškození 50 (protože 100 - 50% = 50) to znamená, že štít bude mít po zásahu 950MJ síly
+- když štít zasáhne zbraň, která dává kinetické poškození ( kinetic ) a poškození jedné střely je 100, obdrží štít poškození 60 (protože 100 - 40% = 60) to znamená, že štít bude mít po zásahu 940MJ síly
+- když štít zasáhne zbraň, která dává termální poškození ( thermal ) a poškození jedné střely je 100, obdrží štít poškození 120 (protože 100 - (-20%) = 120) to znamená, že štít bude mít po zásahu 880MJ síly
+
+Každý typ štítu má svoji vlastní rychlost **regenerace** (regeneration rate) - xMJ/s. To znamená, že čím více MJ štít má, tím déle se bude regenerovat. Pro regeneraci štítů je potřeba mít alespoň ½ bodu energie v Systémech, aby se dobíjel **kondenzátor power distributoru.** Štít se začne regenerovat automaticky, jakmile má energii v kondenzátoru a pokud neobdržel určitý čas (několik vteřin) žádné poškození. Pokud obdrží poškození, regenerace se opět zastaví.
+
+Když máme plně nabité štíty (1000 MJ) a dáme 4 body energie do systémů, budou mít štíty sílu 1600 MJ (protože 4 body --- 1000MJ + 60% = 1600MJ)
+
+## Upgrade a zesílení štítů
+
+**Štíty můžeme kromě energy managementu zesílit i dalšími externími moduly:**
+
+**[Shield Booster:][ShieldBooster]** Modul na utility slot, který zvyšuje absolutní sílu štítu o určité procento (záleží na třídě modulu A-E)
+
+**[Shield Cell Banks (SCB):][ShieldCellBank]** Modul do optional internals, který umožňuje během krátkého časového úseku regenerovat určitý počet MJ štítu za cenu velkého krátkodobého nárůstu teploty. Množství MJ které SCB regeneruje závisí na velikosti a třídě modulu.
+
+**Guardian Shield Reinforcement:** Experimentální modul do optional internals který navyšuje maximální absolutní sílu štítu o určitý počet MJ (zase záleží na velikosti a třídě modulu). Pro jeho odemčení je potřeba získat guardian tech (ze začátku nedoporučujeme pro vysokou náročnost a nízký užitek)
+
+**[Engineering:][Engineering]** U některých engineerů můžeme vylepšit shield generátory, shield boostery a SCB a kompletně změnit hodnoty rezistencí, sílu, rychlost regenerace, apod. štítů. (Velmi užitečná avšak ze začátku nedostupná možnost zesílení štítů)
+
+[ShieldBooster]: shieldBooster
+[ShieldCellBank]: shieldCellBank
+[Engineering]: engineering

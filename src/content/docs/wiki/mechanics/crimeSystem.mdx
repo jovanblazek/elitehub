@@ -1,0 +1,79 @@
+---
+title: Crime System
+description: Vysvetlenie systému zločinu v Elite Dangerous pokuty, odmeny, notoriety a detenčné centrá.
+---
+
+Pri porušení zákonov v Elite existujú tri možné dôsledky. Pokuta (fine), odmena (bounty) a notoriety (zlá povesť). Keďže pre notoriety neexistuje jednoduchý preklad, budeme používať anglický výraz. Na začiatok je dôležité poznamenať, že pokuty a odmeny už nemajú dobu expirácie ako kedysi.
+
+Všetky nezaplatené pokuty a odmeny nájdeme v **ľavom paneli** v záložke transactions.
+
+## Pokuty (fines)
+
+Pokuty sa udeľujú za priestupky, ako napríklad kolíziu vo vyššej ako povolenej rýchlosti v okolí staníc alebo napríklad za nesplnenie/zrušenie transportných misií, alebo taktiež za pašovanie nelegálneho nákladu (keď vás oskenujú samozrejme).
+
+Po udelení pokuty nebudete wanted, čiže na vás nebudú útočiť policajti alebo bounty hunteri.
+
+![Udelenie pokuty](/images/crimeSystem1.jpg)
+
+### **Ako sa zbaviť pokuty:**
+
+Ak máte pokutu a nadokujete sa na akejkoľvek stanici, môžete si všimnúť, že [station services][StationServices] sú dostupné v annonymous access móde. To znamená, že niektoré funkcie stanice vám nie sú dostupné pokiaľ nezaplatíte pokutu.
+
+Pokutu môžete zaplatiť na akejkoľvek stanici v [station services][StationServices] - contacts - security contact.
+
+## Odmeny (bounties)
+
+Pozor, nejedná sa o bounty vouchery! Odmeny (na vašu hlavu) sa udeľujú za vážnejšie priestupky a trestné činy ako napríklad poškodenie clean lodí, trespassing (vstup na súkromný pozemok) alebo za ničenie majetku ako napr. generátory.
+
+Po vypísaní odmeny na vašu hlavu, budete wanted, čiže na vás budú útočiť policajti a [interdictiovať][Interdictions] bounty hunteri. 
+
+![Odmeny a pokuty sa zobrazujú v ľavom paneli](/images/crimeSystem2.jpg)
+
+Menšie odmeny (do cca 10,000 Cr) sú limitované na miestnu jurisdikciu (si wanted len tam, kde sa tá frakcia nachádza). Po prekročení cca 10,000 Cr sa z odmeny stáva medzisystémová odmena (Interstellar bounty).
+
+**Príklad:** Bola na mňna vypísaná odmena 20,000 Cr za poškodenie a okradnutie NPC, ktoré patrilo k federačnej frakcii. Keďže sme nad hranicou 10,000, z odmeny sa stáva medzisystémová. Keďže frakcia, ktorá na mňa vypísala odmenu podporuje federáciu, každý systém kde sa nachádza federácia o mne vie a budem v ňom wanted.
+
+### **Ako sa zbaviť odmeny:**
+
+Po novom (od verzie 3.0) sa odmeny vypisujú nie na vás, ale na loď, v ktorej bol trestný čin spáchaný. Keď spáchate trestný čin a dostanete bounty, loď dostáva status "Hot" , čo znamená, že moduly a loď samotnú môžete predať za oveľa menej ako obvykle. Taktiež, "hot" moduly nemôžete presunúť do clean lodí. Jednoducho povedané, nikto nechce kradnuté auto/diely.
+
+Odmien sa dokážete zbaviť nasledujúcimi spôsobmi (za predpokladu, že máte notoriety 0):
+
+- **Udáte sa.** Ináč povedané, nadokujete sa na stanici na ktorej ste wanted a v [station services][StationServices] \- contacts - security contact sa “vykúpite”. Následne budete deportovaný do najbližšieho [detenčného centra.][DetentionCenters] Tento spôsob je dosť riskantný, pretože stanice zvyknú mať v okolí veľa policajtov, ktorí začnú strieľať keď vás zbadajú.
+
+- **Interstellar Factors.** Pomocou [galaxy mapy][GalaxyMap] alebo iných nástrojov si nájdete najbližší Interstellar Factors a "vykúpite" sa tam. Postup je rovnaký ako pri prvom spôsobe až na to, že sa môžete vykúpiť v akomkoľvek Interstellar Factors, takže hrozba policajtov je v podstate nulová. Taktiež, žiadna deportácia vám v tomto prípade nehrozí.
+
+V prípade, že nemáte notoriety 0 a nechce sa vám čakať kým notoriety klesne, nechajte sa zničiť. Respawnete sa v najbližšom [detenčnom centre,][DetentionCenters] kde bude musieť zaplatiť odmenu a rebuy.
+
+Spáchanie zločinu v multicrew má za následok umiestnenie pokuty alebo odmeny na vašu najcennejšiu loď.
+
+## Notoriety
+
+Notoriety, alebo zlá povesť, sa hráčovi pridáva výhradne za ničenie "Clean" lodí.
+
+Jeden bod za každú loď až do maxima - 10. Notoriety sa sama znižuje, 1 bod za každé 2 hodiny aktívneho herného času. To znamená že musíte byť v hre, aj keď len nadockovaný na stanici. Body notoriety si viete pozrieť v pravom paneli vľavo dole, pod rebuy.
+
+![Notoriety - pravý panel - vľavo dole](/images/crimeSystem3.jpg)
+
+Na rozdiel od odmien, notoriety sa viaže na commandera, nie na loď. Po zničení lode (s vami) sa notoriety vynuluje. Čím vyššia notoriety, tým vyššia odmena za vašu hlavu.
+
+Vysoká notoriety má za následok:
+
+- Po spáchaní trestného činu bude zaslaná Elitná Pokročilá Taktická Odozva (komando), namiesto regulárnych policajtov.
+- Prepínanie do lacnejších lodí (pre zmiernenie rebuy) nebude fungovať. Po zničení bude rebuy vynásobený.
+- Po zničení iného hráča má ten hráč menší rebuy.
+
+## Detenčné Centrá
+
+Detenčné centrá sú megalode, rozmiestnené v obývaných častiach galaxie. Slúžia na respawn hráčov po zatknutí (zničení) alebo vyplatení odmien. Potom ako je hráč deportovaný do detenčného centra, musí zaplatiť všetky pokuty, odmeny a v prípade zničenia aj rebuy.
+
+Hráč je premiestnený do najbližšieho detenčného centra, ktoré má rovnakú jurisdikciu ako tá, v ktorej trestný čin spáchal. Činy spáchané v nezávislých systémoch majú na starosti nezávislé detenčné centrá atď.
+
+Po respawne a vyplatení môže hráč detenčné centrum opustiť. Inštancie, v ktorých sa tieto centrá nachádzajú, sú výlučne solo, aby sa predišlo gankovaniu.
+
+![Detenčné centrum](/images/crimeSystem4.jpg)
+
+[StationServices]: stationServices
+[Interdictions]: interdikcie
+[DetentionCenters]: crimeSystem#Detencne-centra
+[GalaxyMap]: galaxyMap

@@ -1,0 +1,29 @@
+---
+  title: Priority modulov
+  description: Ako fungujú priority napájania lodných modulov v Elite Dangerous.
+---
+
+Každá loď v Elite je vybavená lodným generátorom (power plant) a niekoľkými modulmi, ktoré sú týmto generátorom napájané. Kapacita generátora však nemusí byť stále dostačujúca, a tak potrebujeme nejaký spôsob ako určiť, ktoré moduly sa majú vypnúť, aby tie ostatné mohli ďalej fungovať. Pre tento účel máme k dispozícii priority modulov.
+
+## Ako to funguje?
+
+Zoznam modulov s ich prioritami a ďalším info nájdeme v pravom paneli, v záložke modules. Každý z modulov má v pravom stĺpci číslo - jeho prioritu. Rozsah priorít je od 1 (najvyššia) po 5 (najnižšia). V prípade nedostatku energie sa ako prvé vypnú moduly s najnižšou prioritou, teda 5.
+
+![Zoznam modulov s prioritami](/images/priority1.jpg)
+
+V spodnej časti UI môžeme vidieť naše aktuálne využitie a grafickú reprezentáciu, ktoré priority sa vypnú v prípade prekročenia.
+
+Ak nemáme nastavené priority a dôjde k prekročeniu dostupného výkonu, všeky moduly sa vypnú.
+
+V prípade, že integrita powerplantu klesne na 0%, jej výkon je znížený na polovicu. Preto je dobrým zvykom, nastaviť si najvyššiu prioritu na nevyhnutné moduly tak, aby ich spotreba neprekročila 50%
+
+## Príklad
+
+Mám bojovú loď, do ktorej sa mi už nezmestí lepší power plant, a teda sa musím uchýliť k manažmentu priorít napájania. Keďže k nedostatku “šťavy” dochádza keď mám vysunuté zbrane, teda pri boji, chcem teda vypnúť tie moduly, ktoré pri boji nebudem potrebovať. Nastavím si teda svoj napr. cargo hatch, docking computer, supercruise assist na prioritu nižšiu ako 1. V prípade, že teraz vysuniem zbrane, vyššie spomenuté moduly sa vypnú.
+
+## Tipy
+
+- V prípade, že integrita powerplantu klesne na 0%, jej výkon je znížený na polovicu
+- Pre ušetrenie energie, vypnite modul cargo scoop
+- V prípade bojových lodí odporúčame nastaviť nižšie priority na moduly, ktoré v boji (rozumej so zapnutými zbraňami) nepoužijete. Napr. FSD, Limpet Controllery, AFMU...
+- Never fly without rebuy!

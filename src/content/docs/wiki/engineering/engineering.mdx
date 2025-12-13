@@ -1,0 +1,103 @@
+---
+  title: Engineering
+  description: Základy a průvodce používáním engineeringu v Elite Dangerous.
+---
+
+## Základy engineeringu
+
+Engineering slouží k dodatečnému a více specializovanému vylepšení jednotlivých modulů. Můžeme díky tomu vylepšit jednotlivé atributy modulu jako např. poškození u zbraní za cenu zvýšené generace tepla.
+
+Vylepšit modul engineeringem můžeme u engineerů, kteří mají vlastní planetární základny. Každý engineer se specializuje na určité moduly, které je schopen vylepšit výměnou za [materiály.][Materials]
+
+Většinu modulů lze engineerovat různými upgrady (tzv. mody/modifikace). Upgrady se liší ve specializaci na určité atributy modulu (např. jeden upgrade zvyšuje fire rate, jiný zase poškození a jiný snižuje power draw). Většina těchto upgradů má 5 stupňů (grades). Čím vyšší stupeň upgradu použijeme, tím větší bývají změny v atributech.
+
+![Srovnání stupňů modifikací](/images/engineering1.jpg)
+
+## Získání přístupu k engineerům
+
+Někteří engineeři jsou pro nás objevení už od začátku, avšak ostatní musíme objevit sami. Abychom však získali přístup k vylepšením, které engineeři nabízí, musíme splnit 3 faktory:
+
+**Objevit engineera:** Jakmile engineera objevíme, zobrazí se nám v Engineers UI (pravý panel - engineers).
+
+![Engineers panel](/images/engineering2.jpg)
+
+**Potkat engineera:** Splníme požadavek a engineer nás pozve navštívit jeho základnu.
+
+![Jak potkat engineera](/images/engineering3.jpg)
+
+**Odemknout engineera:** Po návštěvě musíme splnit další úkol od engineera, po jehož splnění nám jsou zpřístupněna vylepšení.
+
+![Odemykání engineera](/images/engineering4.jpg)
+
+Jak objevit, potkat a odemknout kterého engineera se dozvíte v [diagramu engineerů.][EngineersDiagram] Doporučená literatura [link.][RedditGuide]
+
+## Stupně přístupu (Access Grade)
+
+Stupně přístupu fungují podobně jako reputace. Jedná se o 5 stupňů, které určují, jaká vylepšení můžeme použít.
+
+Bezprostředně po odemknutí engineera máme grade 1 access (1. stupeň přístupu). To znamená, že můžeme použít pouze upgrady 1. stupně.
+
+Abychom zvýšili access grade u engineera, můžeme dělat upgrady (ty které máme zpřístupněné) a nebo, **pokud** to engineer nabízí, můžeme prodávat exploration data, obchodovat nebo si vybírat bounty vouchery.
+
+![Stupeň přístupu](/images/engineering5.jpg)
+
+## Experimental Effects
+
+Experimentální efekty jsou dodatečné efekty pro modifikace, které buď dále upravují atributy modulů, nebo jim dávají určité schopnosti. Tyto efekty můžeme aplikovat na modul, pokud jsme provedli alespoň jeden pokus u kterékoliv modifikace na kterémkoliv stupni. Na jeden modul můžeme aplikovat **pouze jeden** experimentální efekt.
+
+Aplikace experimentálních efektů také stojí materiály.
+
+![Výběr experimentálních efektů](/images/engineering6.jpg)
+
+## Pinned Blueprints
+
+U každého engineera si můžeme pinnout (připnout) blueprint na **jednu** modifikaci a všechny její stupně. Díky tomu můžeme na kterékoliv stanici s aktivním [outfittingem][Outfitting] modifikovat naše moduly v remote workshopu. Nemůžeme zde však aplikovat experimentální efekty.
+
+Stupně modifikací, které můžeme aplikovat, záleží na stupni přístupu/access grade u daného engineera.
+
+![Pinned blueprints v remote workshopu](/images/engineering7.jpg)
+
+## Jak probíhá proces engineerování?
+
+### **1\. Získáme přístup k engineerovi**
+
+Abychom mohli engineerovat nějaký modul, musíme samozřejmě mít nejdříve odemknutého a zpřístupněného engineera.
+
+### **2\. Nasbíráme materiály pro modifikace**
+
+Každá modifikace u engineerů nás stojí [materiály.][Materials] Protože modifikace, jejich stupně a jejich experimentální efekty vyžadují odlišné materiály, najdeme si potřebné materiály na [inara.cz][InaraEngineers] a vydáme se je sehnat (místa a oblasti pro efektivní sběr těžko dostupných materiálů najdete [zde][MaterialsTricks] )
+
+**Pozor:** _Při modifikování modulů (obzvlášť u modifikací vyššího stupně) je potřeba více pokusů, abychom dokončili modifikaci. Doporučujeme proto určitě nasbírat více materiálů, než je podle Inary potřeba (Grade 1 -> 2x , Grade 2 -> 3x , Grade 3 -> 5x , Grade 4 -> 7x , Grade 5 -> 10x )._
+
+### **3\. Zvolíme Upgrade**
+
+Přistaneme na základně a zvolíme Engineers Workshop, kde vybereme modul, který chceme vylepšit, modifikaci, kterou chceme použít a stupeň, který chceme aplikovat.
+
+Pokud nebyl modul předtím modifikován, nebo chceme použít jinou modifikaci než na modulu už je, musíme začít od stupně 1.
+
+Každý stupeň má nějaké maximální hodnoty, na které je možné modul vylepšit. Každým pokusem se nám posune ukazatel postupu na jednotlivých atributech modulu o náhodný kousek. Jakmile jsme dosáhli maximálních hodnot u jednoho stupně, musíme pro další vylepšení zvolit vyšší stupeň. 
+
+**Pozor:** _Abychom mohli použít vyšší stupeň modifikace, musíme dosáhnout alespoň cca 80% postupu u té předchozí._
+
+![Výběr modifikace](/images/engineering8.jpg)
+
+### **4\. Zvolíme experimental effect**
+
+Jakmile provedeme jeden pokus o modifikaci, máme tu možnost aplikovat na modul i experimentální efekt. Aplikace tohoto efektu nás také stojí nějaké materiály (liší se dle efektu - podrobnosti najdeme na [inara.cz][InaraEngineers] ).
+
+**Pozor:** _Experimentální efekty sice můžeme aplikovat po jednom pokusu na kterémkoliv stupni modifikace, avšak pokud budeme chtít pokračovat v modifikaci modulu po aplikaci experimentálního efektu, tento efekt je zrušen a musíme znovu zaplatit materiály abychom ho získali._
+
+![Výběr experimentálních efektů](/images/engineering6.jpg)
+
+### **5\. Remote Workshop Engineering/Pinned Blueprints**
+
+Pokud chceme engineerovat modul pomocí pinned blueprints, musíme najít stanici, na které je [outfitting.][Outfitting] Následně si ve station services najdeme možnost remote workshop a zvolíme mod, který chceme aplikovat. Postupujeme dále stejně jako u engineera.
+
+**Pozor:** _U každého engineera můžeme pinnout pouze jeden blueprint (takže jednu modifikaci a všech jejích stupňů) a při engineeringu v remote workshopech **nemůžeme** aplikovat experimentální efekty._
+
+[Materials]: materials
+[EngineersDiagram]: ./engineers.php
+[RedditGuide]: https://www.reddit.com/r/EliteOne/comments/8bs6g8/foxs_stepbystep_guide_to_unlocking_engineers/
+[Outfitting]: outfitting
+[InaraEngineers]: https://inara.cz/galaxy-engineers/
+[MaterialsTricks]: materialsTricks

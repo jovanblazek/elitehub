@@ -1,0 +1,44 @@
+---
+  title: Subsystémy
+  description: Informace o modulech lodi, jejich poškození a opravách v Elite Dangerous.
+---
+
+Subsystémy jsou vlastně jednotlivé moduly, které jsou na lodi nainstalovány. Jsou to tedy core internals, optional internals, utility i zbraně. Tyto moduly mají určitou výdrž a dají se zničit.
+
+K poškození modulů/subsystémů dojde, když zásah nepoškodí pouze vnější plášť lodi (hull) ale také modul za ním. Když modul utrpí poškození, jeho integrita klesá.
+
+Pokud klesne integrita modulu pod hranici 80% začne modul náhodně selhávat (malfunctions) a ztrácí účinnost. Čím nižší je integrita, tím častěji se začnou výpadky modulu projevovat.
+
+## Reboot/Repair
+
+Pokud integrita modulu klesne na 0%, je modul kompletně zničen. Tento modul je možné ho opravit pomocí Reboot/Repair funkce, kterou najdeme v pravém panelu pod záložkou ship.
+
+Po aktivaci této funkce loď krátkodobě vypne všechny své systémy a poškodí některé moduly aby opravila ty zcela nefunkční.
+
+![Panel kde najdeme Reboot/Repair](/images/subsystems1.jpg)
+
+## Naše subsystémy
+
+Subsystémy (moduly) naší vlastní lodě můžeme najít v pravém panelu pod záložkou modules. Vidíme tam název modulu, jeho spotřebu energie, [prioritu][Priority] a integritu v %. Po rozkliknutí modulu ho můžeme vypnout a nebo opravit pomocí AFMU (viz. pro tips).
+
+![Modules panel](/images/subsystems2.jpg)
+
+## Nepřátelské subsystémy
+
+Stejně jak může někdo jiný poškodit naše moduly, můžeme i my poškodit ty jeho. 
+
+Abychom mohli cíleně zaútočit na nějaký modul, musíme oskenovat loď (zaměř loď a chvilku na ni miř) a pak modul zvolit v levém panelu pod záložkou subtargets. Naše gimbaled a turreted zbraně následně začnou sledovat tento modul.
+
+Zároveň se nám zobrazí na nepřátelské lodi malý červený zaměřovač, který nám umožňuje míření i pomocí fixed zbraní.
+
+![Subtargets UI v levém panelu](/images/subsystems3.jpg)
+
+## Pro tipy
+
+- Pro opravu modulů můžeme nainstalovat v optional internals AFMU (Auto-Field Maintenance Unit), která nám umožní opravovat moduly bez použití Reboot/Repair.
+- Poškození, které modul při zásahu dostane lze velmi zredukovat pomocí Module Reinforcement Package.
+- Pokud máme deaktivované [štíty,][Shields] můžeme použít Reboot/Repair. Po dokončení rebootu se nám štíty instantně dobijí na 50%. (Nefunguje pokud je na lodi guardian shield reinforcement).
+- Power plant a canopy nemůžeme nijak opravit ani vypnout.
+
+[Priority]: priority
+[Shields]: shields
