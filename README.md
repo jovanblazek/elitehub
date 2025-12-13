@@ -77,7 +77,7 @@ Elitehub je rozdelený na 3 hlavné časti:
 1. Názvy súborov sú v anglickom jazyku a písané štýlom `kebab-case`.
 2. Používajte súbory s príponou `.mdx`.
 3. Všetky stránky by mali mať hlavičku `title` a `description`.
-4. Obrázky sú v adresári `src/assets/` v rovnakom podadresári ako stránka ktorej patria a do Markdown-u sa vkladajú pomocou aliasu `@/assets/`. Názvy obrázkov by mali byť výstižné v kontexte stránky.
+4. Obrázky sú v adresári `src/assets/` rozdelené do podadresárov podľa kategórie a do Markdown-u sa vkladajú pomocou aliasu `@/assets/`. Názvy obrázkov by mali byť výstižné.
 5. Dodržujte poradie nadpisov. Nadpis štvrtej úrovne nemôže byť pod nadpisom druhej úrovne.
 6. Nadpisy by mali mať aspoň 2 slová a jednoznačne opisovať o čom je daný odsek.
 7. Nadpis by nemal nasledovať po nadpise. Pod každým nadpisom by mal byť aspoň jeden odsek s textom alebo zoznam.
